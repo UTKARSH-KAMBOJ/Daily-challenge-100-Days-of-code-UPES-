@@ -1,0 +1,46 @@
+/*write a program to input two numbers and display their sum,difference,product,and Quotient*/
+/*Sample test cases:
+Input:
+10  2
+Output 1:
+sum=12,diff=8,Product=20,Quotient=5
+Input 2:
+7  3
+Output 2:
+Sum=10,diff=4,product=21,Qutient=2*/
+#include<stdio.h>
+int main(){
+    int a,b,sum;
+    a=10;
+    b=2;
+    sum=a+b;
+    printf("the addition is=%d\n",sum);
+    int c,d,diff;
+    c=10;
+    d=2;
+    diff=d-c;
+    printf("the diff is=%d\n",diff);
+    int e,f,product;
+    e=10;
+    f=2;
+    product=e*f;
+    printf("the product is=%d\n",product);
+    int g,h,quotient;
+    g=10;
+    h=2;
+    quotient=g/h;
+    printf("the quotient is=%d",quotient);
+    int i,j,k,l,m,n;
+    i=7;
+    j=3;
+   k =i+j;
+   l =i-j;
+   m =i*j;
+   n =i/j;
+    printf("the sum is=%d\n",k );
+    printf("the duff is=%d\n",l);
+    printf("the product is =%d\n",m);
+    printf("the quotient is=%d\n",n);
+    return 0;
+
+}
