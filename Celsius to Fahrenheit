@@ -1,0 +1,22 @@
+/*write a program to convert temperature form celsius to fahrenheit.*/
+/*sample test cases
+input 1:
+0
+output 1;
+fahrenheit=32
+input 2:
+100
+output 2:
+fahrenheit=212
+*/
+#include<stdio.h>
+int main(){
+    int celsius=0,c;
+    int fahrenheit;
+    fahrenheit=c*9/5+32;
+    printf("fahrenheit=%d\n",fahrenheit);
+    int d=100,e;
+    e=d*9/5+32;
+    printf("fahrenheit=%d",e);
+    return 0;
+}
