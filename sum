@@ -1,0 +1,27 @@
+/*Q1:write a program to input two number and display their sum.*/
+/*sample test class
+Input 1:
+3 4
+Output 1:
+Sum=7
+
+Input 2:
+-1  20
+Output 2:
+Sum=19
+*/
+#include<stdio.h>
+int main(){
+    int a,b,sum;
+    a=3;
+    b=4;
+    sum=a+b;
+    printf("the addition is=%d\n",sum);
+    int c,d,e;
+    c=-1;
+    d=20;
+    e=c+d;
+    printf("the addition is=%d",e);
+    return 0;
+
+}
