@@ -1,0 +1,31 @@
+/*ques 6) write a progam to swap two number without using a third variable.*/
+/*sample test cases:
+inptu 1:
+10  20
+output 1:
+after swap: 20  10
+input 2:
+7   14
+output 2:
+after swap: 14   7*/
+#include<stdio.h>
+int main(){
+    int a,b;
+    a=10;
+    b=20;
+    b=a+b;//b=30
+    a=b-a;//a=20
+    b=b-a;//b=10
+    printf("value of a=%d\n",a);
+    printf("value of b=%d\n",b);
+    int c,d;
+    c=7;
+    d=14;
+    d=c+d;
+    c=d-c;
+    d=d-a;
+    printf("value of c=%d\n",c);
+    printf("value of d=%d",d);
+    return 0;
+
+}
