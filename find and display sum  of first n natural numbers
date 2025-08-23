@@ -1,0 +1,23 @@
+/*ques 6) write a progam to find and display the sum of the first n natural number.*/
+/*sample test cases:
+inptu 1:
+5  
+output 1:
+sum=15
+input 2:
+10
+output 2:
+som=55*/
+#include<stdio.h>
+int main(){
+    int n,sum;
+    n=5;
+    sum=n*(n+1)/2;
+    printf("sum=%d\n",sum);
+    int a=10;
+    int b;
+    b=a*(a+1)/2;
+    printf("sum=%d",b);
+    return 0;
+
+}
