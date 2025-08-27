@@ -1,0 +1,39 @@
+/* write a programm to input time in second and convert it to hours : minutes : seconds formats
+*/
+/*sample test cases:
+input 1:
+3661
+output 1:
+1:1:1
+
+input 2:
+7322
+output 2:
+2:2:2
+*/
+
+#include <stdio.h>
+
+int main() {
+    int totalSeconds, hours, minutes, seconds;
+
+    totalSeconds = 3661;
+
+    hours = totalSeconds / 3600;
+    minutes = (totalSeconds % 3600) / 60;
+    seconds = totalSeconds % 60;
+
+    printf("%d:%d:%d\n", hours, minutes, seconds);
+
+    int totalSeconds1, hours1, minutes1, seconds1;
+
+    totalSeconds1 = 7322;
+
+    hours1 = totalSeconds1 / 3600;
+    minutes1 = (totalSeconds1 % 3600) / 60;
+    seconds1 = totalSeconds1 % 60;
+
+    printf("%d:%d:%d\n", hours1, minutes1, seconds1);
+
+    return 0;
+}
