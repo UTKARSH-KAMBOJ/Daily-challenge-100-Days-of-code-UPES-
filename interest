@@ -1,0 +1,47 @@
+/*write a program to calculate simple and compound interest for a given principal,rate,and time*/
+/*sample test cases:
+input 1:
+1000   5   2
+output 1:
+simple interest=100,
+compound interest=102.5
+
+input 2:
+5000  7   3
+output 2:
+simple interest=1050,
+coumpound interest=1125.76*/
+#include <stdio.h>
+#include <math.h>  // For pow()
+
+int main() {
+    float p, r, t;
+    float si, ci, amount;
+
+    // Sample input: you can change these
+    p = 1000;
+    r = 5;
+    t = 2;
+
+    // Simple Interest formula
+    si = (p * r * t) / 100;
+
+    // Compound Interest formula
+    amount = p * pow((1 + r / 100), t);
+    ci = amount - p;
+
+    printf("simple interest=%.2f\n", si);
+    printf("compound interest=%.2f\n", ci);
+    float p1,r1,t1;
+    float si1,ci1,amount1;
+    p1=5000;
+    r1=7;
+    t1=3;
+    si1=(p1*r1*t1)/100;
+    amount1=p1*pow((1+r1/100),t1);
+    ci1=amount1-p1;
+    printf("simple interest=%.2f\n",si1);
+    printf("compound interest=%.2f\n",ci1);
+
+    return 0;
+}
