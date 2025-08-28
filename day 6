@@ -10,21 +10,14 @@ output2:
 12 is even*/
 #include<stdio.h>
 int main(){
-    int a=7;
+    int a;
+printf("enter the value of a:");
+scanf("%d",&a);
     if(a%2==0){
         printf("7 is even \n");
     }
     else{
         printf("7 is odd\n");
-    }
-    int b=12;
-    if(b%2==0){
-        printf("12 is even\n");
-
-    }
-    else{
-        printf("12 is odd\n");
-
     }
     return 0;
 }
