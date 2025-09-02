@@ -1,0 +1,80 @@
+/*Q25: Write a program to implement a basic calculator using switch-case for +, -, *, /, %.*/
+
+/*
+Sample Test Cases:
+Input 1:
+4 2 +
+Output 1:
+6
+
+Input 2:
+10 3 %
+Output 2:
+1
+
+Input 3:
+15 5 /
+Output 3:
+3
+
+*/
+#include<stdio.h>
+int main(){
+int c;
+printf("enter the num\n 1 for +\n 2 for -\n 3 for *\n 4 for /\n 5 for %%:");
+scanf("%d",&c);
+int a,b,d,e,f,g,h,i,j,k,l,m,n;
+int q,r,s;
+switch(c){
+
+case 1:
+
+    printf("enter the value of a:");
+    scanf("%d",&a);
+    printf("enter the value of b:");
+    scanf("%d",&b);
+    d=a+b;
+    printf("%d",d);
+    break;
+case 2:
+
+    printf("enter the value of e:");
+    scanf("%d",&e);
+    printf("enter the value of f:");
+    scanf("%d",&f);
+    g=e-f;
+    printf("%d",g);
+    break;
+case 3:
+
+     printf("enter the value of h:");
+    scanf("%d",&h);
+    printf("enter the value of j:");
+    scanf("%d",&j);
+    k=j*h;
+    printf("%d",k);
+    break;
+case 4:
+
+ printf("enter the value of l:");
+    scanf("%d",&l);
+    printf("enter the value of m:");
+    scanf("%d",&m);
+    n=l/m;
+    printf("%d",n);
+    break;
+case 5:
+printf("enter the value of q:");
+scanf("%d",&q);
+printf("enter the value of r:");
+scanf("%d",&r);
+s=q%r;
+printf("%d",s);
+break;
+    default:
+    printf("no data");
+}
+return 0;
+}
+
+    
