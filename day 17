@@ -1,0 +1,35 @@
+/*Q33: Write a program to check if a number is an Armstrong number.*/
+
+/*
+Sample Test Cases:
+Input 1:
+153
+Output 1:
+Armstrong
+
+Input 2:
+123
+Output 2:
+Not Armstrong
+
+*/
+#include<stdio.h>
+int main(){
+    int n,r,c,arm=0;
+    printf("enter the value of the number:");
+    scanf("%d",&n);
+    c=n;
+    while(n>0){
+        r=n%10;
+        arm=(r*r*r)+arm;
+        n=n/10;
+    }
+    if(c==arm){
+        printf("armstrong number");
+    }
+    else
+    {
+        printf("not a armstrong number");
+    }
+    return 0;
+}
