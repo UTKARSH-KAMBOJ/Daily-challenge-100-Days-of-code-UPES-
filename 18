@@ -1,0 +1,36 @@
+/*Q36: Write a program to find the HCF (GCD) of two numbers.*/
+
+/*
+Sample Test Cases:
+Input 1:
+12 18
+Output 1:
+6
+
+Input 2:
+7 9
+Output 2:
+1
+
+*/
+#include<stdio.h>
+int main(){
+    int n,m;
+    int a;
+    printf("enter the value ofn:");
+    scanf("%d",&n);
+    printf("enter the value of m:");
+    scanf("%d",&m);
+    int i;
+    int hcf=1;
+    int min=(n<m)?n:m;
+    for(i=1;i<=min;i++){
+        if(m%i==0&&n%i==0){
+        hcf =i;
+            
+        }
+
+    }
+    printf("%d\n",hcf);
+    return 0;
+}
