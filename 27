@@ -1,0 +1,49 @@
+/*Q54: Write a program to print the following pattern:
+
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+
+
+/*
+Sample Test Cases:
+Input 1:
+
+Output 1:
+Pattern with layers of stars as shown.
+
+*/
+#include<stdio.h>
+int main(){
+    int rows;
+    printf("enter the value of rows:");
+    scanf("%d",&rows);
+   int  i;
+    int space=0;
+    for(i=1;i<=rows;i++){
+        for(space=1;space<=rows-i;space++){
+            printf(" ");
+        }
+        for(int k=1;k<=2*i-1;k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    int  j;
+    int space1=0;
+    for(j=5;j>=1;j--){
+        for(space1=1;space1<=rows-j;space1++){
+            printf(" ");
+        }
+        for(int l=1;l<=2*j-1;l++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
