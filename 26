@@ -1,4 +1,4 @@
-Q52: Write a program to print the following pattern:
+/*Q52: Write a program to print the following pattern:
 
 *
 
@@ -28,3 +28,37 @@ Output 1:
 Pattern with stars spaced irregularly as shown.
 
 */
+#include<stdio.h>
+int main(){
+    int a=5;
+    
+    int i;
+    
+    for(i=1;i<=a;i++){
+        if(i==1){
+            printf("*");
+            printf("\n\n");}
+
+            else if(i==2){
+                printf("*\n*\n*");
+                printf("\n\n");
+            }
+            else if(i==3){
+                printf("*\n*\n*\n*\n*");
+                printf("\n\n");
+            }
+            else if (i==4){
+                printf("*\n*\n*");
+                printf("\n\n");
+
+            }
+            else if(i==5){
+                printf("*");
+            }
+
+        
+    }
+    return 0;
+
+
+}
