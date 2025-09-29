@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+    int n, x, i, j;
+
+    // Step 1: Take array size
+    scanf("%d", &n);
+
+    // Step 2: Declare array with +1 size (to insert new element)
+    int arr[n + 1];
+
+    // Step 3: Take array input
+    for(i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Step 4: Take element to insert
+    scanf("%d", &x);
+
+    // Step 5: Find position where x should be inserted
+    // i will stop at the first element greater than x
+    for(i = 0; i < n; i++) {
+        if(arr[i] > x) {
+            break;
+        }
+    }
+
+    // Step 6: Shift elements to the right (from end to position i)
+    for(j = n; j > i; j--) {
+        arr[j] = arr[j - 1];
+    }
+
+    // Step 7: Insert x at correct position
+    arr[i] = x;
+
+    // Step 8: New array size becomes n+1
+    n++;
+
+    // Step 9: Print final array
+    for(i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
